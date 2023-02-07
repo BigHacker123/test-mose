@@ -5458,12 +5458,12 @@ local GameName = game:GetService("MarketplaceService"):GetProductInfo(game.Place
             end
         end
         --
+        do
         if pointer and tostring(pointer) ~= "" and tostring(pointer) ~= " " and not library.pointers[tostring(pointer)] then
             library.pointers[tostring(pointer)] = configLoader
         end
         --
-        section.currentAxis = section.currentAxis + 148 + 4
-        section:Update()
+
         --
         return configLoader
     end
